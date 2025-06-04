@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Conexão do Campo com a Cidade</title>
+  <style>
+    :root {
+      --primary-color: #3a9ad9;
+      --secondary-color: #f2a365;
+      --background-gradient: linear-gradient(135deg, #e0f7fa, #fff3e0);
+      --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: var(--font-family);
+      background: var(--background-gradient);
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: var(--primary-color);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      letter-spacing: 1.2px;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+      font-style: italic;
+    }
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      margin-bottom: 3rem;
+      overflow: hidden;
+      display: flex;
+      flex-wrap: wrap;
+      transition: transform 0.3s ease;
+    }
+    section:hover {
+      transform: scale(1.02);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+    }
+    .text-content, .image-content {
+      flex: 1 1 300px;
+      padding: 1.5rem 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .text-content h2 {
+      color: var(--secondary-color);
+      font-size: 2rem;
+      margin-bottom: 0.75rem;
+    }
+    .text-content p {
+      font-size: 1.1rem;
+      color: #444;
+    }
+    .image-content {
+      max-width: 450px;
+      padding: 0;
+    }
+    .image-content img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 0 12px 12px 0;
+      display: block;
+    }
+    /* Alternate image/text layout */
+    section:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+    section:nth-child(even) .image-content img {
+      border-radius: 12px 0 0 12px;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      color: #666;
+      font-size: 0.9rem;
+      border-top: 1px solid #ddd;
+      margin-top: 3rem;
+    }
+    @media (max-width: 700px) {
+      section {
+        flex-direction: column;
+      }
+      section:nth-child(even) {
+        flex-direction: column;
+      }
+      .image-content {
+        max-width: 100%;
+        border-radius: 0 0 12px 12px !important;
+      }
+      .image-content img {
+        border-radius: 0 0 12px 12px !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Conexão do Campo com a Cidade</h1>
+    <p>Celebrando a harmonia entre a vida rural e urbana</p>
+  </header>
+  <main>
+    <section>
+      <div class="text-content">
+        <h2>A essência do campo</h2>
+        <p>O campo é fonte de vida, natureza, ar puro e alimentos frescos. Ele mantém vivas as tradições, a cultura local e a conexão com a terra, transformando os frutos do solo em sustento para todos.</p>
+      </div>
+      <div class="image-content">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Paisagem do campo com plantações" />
+      </div>
+    </section>
+    <section>
+      <div class="image-content">
+        <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=600&q=80" alt="Vista da cidade com prédios modernos" />
+      </div>
+      <div class="text-content">
+        <h2>A energia da cidade</h2>
+        <p>A cidade é coração pulsante da inovação e oportunidade. Espaço diversificado, onde pessoas e culturas se encontram, e os desafios do futuro buscam soluções inteligentes.</p>
+      </div>
+    </section>
+    <section>
+      <div class="text-content">
+        <h2>Ligação indissociável</h2>
+        <p>O campo e a cidade são interdependentes. Enquanto o campo fornece recursos essenciais, a cidade oferece tecnologia, serviços e mercados onde essas riquezas são valorizadas.</p>
+      </div>
+      <div class="image-content">
+        <img src="https://images.unsplash.com/photo-1468071174046-657d9d351a40?auto=format&fit=crop&w=600&q=80" alt="Imagem ilustrando a conexão entre cidade e campo" />
+      </div>
+    </section>
+    <section>
+      <div class="image-content">
+        <img src="https://images.unsplash.com/photo-1494522344102-5ba0d6ac36f3?auto=format&fit=crop&w=600&q=80" alt="Pessoa utilizando um laptop no campo" />
+      </div>
+      <div class="text-content">
+        <h2>O futuro da conexão</h2>
+        <p>Com tecnologia e sustentabilidade, a conexão entre campo e cidade se fortalece, promovendo qualidade de vida, inovação agrícola e desenvolvimento sustentável para todas as gerações.</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 Ana Carla - Todos os direitos reservados.
+  </footer>
+</body>
+</html>
+
